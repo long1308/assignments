@@ -1,0 +1,12 @@
+// cấu hình đường dẫn thư mục
+{
+    "compilerOptions": {
+        "module": "Commonjs",
+        "target": "es6",
+        "baseUrl": "./src",
+        "paths": {
+            "@/*": ["*"]
+        }
+    },
+    "exclude": ["node_modules"]
+}
