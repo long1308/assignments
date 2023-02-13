@@ -23,6 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 .history
-db.json
-jsconfig.json
-vite.config.json
+
+
+tailwind.config.cjs
+postcss.config.cjs

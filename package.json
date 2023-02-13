@@ -10,6 +10,13 @@
     "json": "json-server --watch db.json"
   },
   "devDependencies": {
-    "vite": "^4.1.0"
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6",
+    "vite": "^4.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "navigo": "^8.11.1"
   }
 }
