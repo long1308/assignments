@@ -1,6 +1,6 @@
 // bootstrap
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.js";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.js";
 // css module
 import classes from "./main.module.css";
 
@@ -12,4 +12,14 @@ const app = document.querySelector("#app");
 import HomePage from "./pages/HomePage";
 
 router.on("/", () => render(HomePage, app));
- router.resolve();
+
+//Quản lý admin
+import index from "./pages/Admin";
+import CategorysPage from "./pages/Admin/CategorysPage";
+import CategoryDetailPage from "./pages/Admin/CategoryDetailPage";
+router.on("/admin", () => render(index, app));
+router.on("/admin/categorys", () => render(CategorysPage, app));
+router.on("/admin/categorys/:id", ({ data }) =>
+  render(() => CategoryDetailPage(data), app)
+);
+router.resolve();

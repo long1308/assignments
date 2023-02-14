@@ -1,5 +1,9 @@
+import Header from "@/components/partials/Header";
+
 const HomePage = () => {
-  return `<div>HomePage</div>`;
+  return `
+  ${Header()}
+  `;
 };
 
 export default HomePage;

@@ -1,17 +1,72 @@
 {
-  "posts": [
+  "menu": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Home",
+      "href": "/home"
+    },
+    {
+      "id": 2,
+      "title": "About",
+      "href": "/about"
+    },
+    {
+      "id": 3,
+      "title": "Works",
+      "href": "/works"
+    },
+    {
+      "id": 4,
+      "title": "Blog",
+      "href": "/blog"
+    },
+    {
+      "id": 5,
+      "title": "Contact",
+      "href": "/Contact"
     }
   ],
-  "comments": [
+  "menuAdmin": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "Dashboard",
+      "href": "/dashboard"
+    },
+    {
+      "id": 2,
+      "title": "Quản Lý Danh Mục",
+      "href" : "/categorys"
+    },
+    {
+      "id": 3,
+      "title": "Quản Lý Dự án",
+      "href": "/projects"
     }
+  ],
+    "projects": [
+      {
+          "name": "dự án 1",
+          "id": 1,
+          "categoryProjectId": 1
+      },
+      {
+          "name": "dự án 2",
+          "id": 2,
+          "categoryProjectId": 1
+      },
+      {
+          "name": "dự án 3",
+          "id": 3,
+          "categoryProjectId": 2
+      }
+  ],
+  "categoryProjects": [
+      { "id": 1, "name": "HTML" },
+      { "id": 3, "name": "CSS" },
+      { "id": 4, "name": "Javascript" },
+      { "id": 5, "name": "ReactJs" },
+      { "id": 6, "name": "Tailwind" },
+      { "id": 7, "name": "PHP" }
   ],
   "profile": {
     "name": "typicode"
