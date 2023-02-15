@@ -17,8 +17,15 @@ router.on("/", () => render(HomePage, app));
 import index from "./pages/Admin";
 import CategorysPage from "./pages/Admin/CategorysPage";
 import CategoryDetailPage from "./pages/Admin/CategoryDetailPage";
+import CtegorysAdd from "./pages/Admin/Ctegorys-add";
+import CategoryEditPage from "./pages/Admin/Category-edit";
+
 router.on("/admin", () => render(index, app));
-router.on("/admin/categorys", () => render(CategorysPage, app));
+router.on("/categorys", () => render(CategorysPage, app));
+router.on("/categorys/add", () => render(CtegorysAdd, app));
+router.on("/admin/categorys/:id/edit", ({ data }) =>
+  render(() => CategoryEditPage(data), app)
+);
 router.on("/admin/categorys/:id", ({ data }) =>
   render(() => CategoryDetailPage(data), app)
 );

@@ -3,70 +3,95 @@
     {
       "id": 1,
       "title": "Home",
-      "href": "/home"
+      "href": "#/home"
     },
     {
       "id": 2,
       "title": "About",
-      "href": "/about"
+      "href": "#/about"
     },
     {
       "id": 3,
       "title": "Works",
-      "href": "/works"
+      "href": "#/works"
     },
     {
       "id": 4,
       "title": "Blog",
-      "href": "/blog"
+      "href": "#/blog"
     },
     {
       "id": 5,
       "title": "Contact",
-      "href": "/Contact"
+      "href": "#/Contact"
     }
   ],
   "menuAdmin": [
     {
       "id": 1,
       "title": "Dashboard",
-      "href": "/dashboard"
+      "href": "#/dashboard"
     },
     {
       "id": 2,
       "title": "Quản Lý Danh Mục",
-      "href" : "/categorys"
+      "href": "#/categorys"
     },
     {
       "id": 3,
       "title": "Quản Lý Dự án",
-      "href": "/projects"
+      "href": "#/projects"
     }
   ],
-    "projects": [
-      {
-          "name": "dự án 1",
-          "id": 1,
-          "categoryProjectId": 1
-      },
-      {
-          "name": "dự án 2",
-          "id": 2,
-          "categoryProjectId": 1
-      },
-      {
-          "name": "dự án 3",
-          "id": 3,
-          "categoryProjectId": 2
-      }
+  "projects": [
+    {
+      "name": "dự án 1",
+      "id": 1,
+      "categoryProjectId": 1,
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/blog/1.svg",
+      "author": "Do Duy Long"
+    },
+    {
+      "name": "dự án 2",
+      "id": 2,
+      "categoryProjectId": 2,
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/blog/1.svg",
+      "author": "Do Duy Long"
+    },
+    {
+      "name": "dự án 3",
+      "id": 3,
+      "categoryProjectId": 3,
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/blog/1.svg",
+      "author": "Do Duy Long"
+    }
   ],
   "categoryProjects": [
-      { "id": 1, "name": "HTML" },
-      { "id": 3, "name": "CSS" },
-      { "id": 4, "name": "Javascript" },
-      { "id": 5, "name": "ReactJs" },
-      { "id": 6, "name": "Tailwind" },
-      { "id": 7, "name": "PHP" }
+    {
+      "id": 1,
+      "name": "HTMLL",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+    },
+    {
+      "id": 3,
+      "name": "Javascript",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+    },
+    {
+      "id": 4,
+      "name": "ReactJs",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+    },
+    {
+      "id": 5,
+      "name": "Tailwind",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+    }
   ],
   "profile": {
     "name": "typicode"

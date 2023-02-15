@@ -20,9 +20,33 @@ const getCategories = () => {
 const getCategoriesDeteail = (id) => {
   return instance.get(`/categoryProjects/${id}?_embed=projects`);
 };
-
+// thêm mới danh mục
+const addCategory = (category) => {
+  return instance.post("/categoryProjects", category);
+};
+// lấy 1 danh mục
+const getOneCategory = (id) => {
+  return instance.get(`/categoryProjects/${id}`);
+};
+// update danh muc
+const updateCategory = (category) => {
+  return instance.put(`/categoryProjects/${category.id}`, category);
+};
+// xóa danh muc
+const deleteCategory = (id) => {
+  return instance.delete(`/categoryProjects/${id}`);
+};
 // xóa dữ liệu
 const deleteProject = (id) => {
   return instance.delete(`/projects/${id}?_embed=projects`);
 };
-export { getMenu, getMenuAdmin, getCategories, getCategoriesDeteail };
+export {
+  getMenu,
+  getMenuAdmin,
+  getCategories,
+  getCategoriesDeteail,
+  addCategory,
+  deleteCategory,
+  getOneCategory,
+  updateCategory,
+};

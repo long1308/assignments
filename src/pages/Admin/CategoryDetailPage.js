@@ -4,5 +4,4 @@ const CategoryDetailPage = ({ id }) => `
 ${Header()}
 ${CategoryDetail(id)}
 `;
-
 export default CategoryDetailPage;
