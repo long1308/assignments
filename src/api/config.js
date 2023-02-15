@@ -36,10 +36,15 @@ const updateCategory = (category) => {
 const deleteCategory = (id) => {
   return instance.delete(`/categoryProjects/${id}`);
 };
-// xóa dữ liệu
-const deleteProject = (id) => {
-  return instance.delete(`/projects/${id}?_embed=projects`);
+// thêm mới projects
+const addProject = (project) => {
+  return instance.post(`/projects`, project);
 };
+// xóa projects
+const deleteProject = (id) => {
+  return instance.delete(`/projects/${id}`);
+};
+
 export {
   getMenu,
   getMenuAdmin,
@@ -49,4 +54,6 @@ export {
   deleteCategory,
   getOneCategory,
   updateCategory,
+  addProject,
+  deleteProject,
 };

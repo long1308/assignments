@@ -19,8 +19,10 @@ import CategorysPage from "./pages/Admin/CategorysPage";
 import CategoryDetailPage from "./pages/Admin/CategoryDetailPage";
 import CtegorysAdd from "./pages/Admin/Ctegorys-add";
 import CategoryEditPage from "./pages/Admin/Category-edit";
-
+import ProjectsAdd from "./pages/Admin/Project-add";
 router.on("/admin", () => render(index, app));
+
+// category
 router.on("/categorys", () => render(CategorysPage, app));
 router.on("/categorys/add", () => render(CtegorysAdd, app));
 router.on("/admin/categorys/:id/edit", ({ data }) =>
@@ -29,4 +31,7 @@ router.on("/admin/categorys/:id/edit", ({ data }) =>
 router.on("/admin/categorys/:id", ({ data }) =>
   render(() => CategoryDetailPage(data), app)
 );
+
+//project
+router.on("/projects/add", () => render(ProjectsAdd, app));
 router.resolve();

@@ -1,11 +1,27 @@
-import { getCategoriesDeteail } from "@/api/config";
+import { getCategoriesDeteail, deleteProject } from "@/api/config";
 import { useState, useEffect } from "@/utilities";
 
 const CategoryDetail = (id) => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    getCategoriesDeteail(id).then(({ data }) => setData(data));
+    getCategoriesDeteail(id).then(({ data: { projects } }) =>
+      setData(projects)
+    );
   }, []);
+
+  useEffect(() => {
+    const btns = document.querySelectorAll("#delete");
+    btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.id;
+        console.log(id);
+        deleteProject(id).then(() => {
+          const newProject = data.filter((c) => c.id != id);
+          setData(newProject);
+        });
+      });
+    });
+  });
   return /*html*/ `
   <div class="flex flex-col text-center w-10/12 float-right">
   <h1 class="text-center text-5xl my-7">Danh Sách Dự Án</h1>
@@ -39,11 +55,9 @@ const CategoryDetail = (id) => {
             </tr>
           </thead>
           <tbody>
-          ${
-            data.projects
-              ? data.projects
-                  .map(
-                    (item, index) => /*html*/ `
+          ${data
+            .map(
+              (item, index) => /*html*/ `
               <tr class="border-b">
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${
                     index + 1
@@ -60,17 +74,15 @@ const CategoryDetail = (id) => {
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${
                     data.name
                   }</a></td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" data-id="${
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><button  id = "delete"class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" data-id="${
                     item.id
                   }">Remove</button>
                   <a  class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"href="/admin/categorys/${
                     item.id
                   }/edit">Sửa</a></td>
               </tr>`
-                  )
-                  .join(" ")
-              : ""
-          }
+            )
+            .join(" ")}
            
           </tbody>
         </table>
