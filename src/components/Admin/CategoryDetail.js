@@ -1,8 +1,16 @@
-import { getCategoriesDeteail, deleteProject } from "@/api/config";
+import {
+  getCategoriesDeteail,
+  deleteProject,
+  getCategories,
+} from "@/api/config";
 import { useState, useEffect } from "@/utilities";
 
 const CategoryDetail = (id) => {
   const [data, setData] = useState([]);
+  const [category, setCategory] = useState([]);
+  useEffect(() => {
+    getCategories().then(({ data }) => setCategory(data));
+  }, []);
   useEffect(() => {
     getCategoriesDeteail(id).then(({ data: { projects } }) =>
       setData(projects)
@@ -71,13 +79,17 @@ const CategoryDetail = (id) => {
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${
                     item.author
                   }</a></td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${
-                    data.name
-                  }</a></td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${category
+                    .map((cate) =>
+                      cate.id == item.categoryProjectId
+                        ? `<h1>${cate.name}</h1>`
+                        : ""
+                    )
+                    .join("")}</a></td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><button  id = "delete"class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" data-id="${
                     item.id
                   }">Remove</button>
-                  <a  class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"href="/admin/categorys/${
+                  <a  class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"href="/admin/projects/${
                     item.id
                   }/edit">Sửa</a></td>
               </tr>`

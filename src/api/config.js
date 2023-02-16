@@ -44,7 +44,14 @@ const addProject = (project) => {
 const deleteProject = (id) => {
   return instance.delete(`/projects/${id}`);
 };
-
+// lấy 1 project
+const getOneProject = (id) => {
+  return instance.get(`/projects/${id}`);
+};
+// update danh muc
+const updateProject = (project) => {
+  return instance.put(`/projects/${project.id}`, project);
+};
 export {
   getMenu,
   getMenuAdmin,
@@ -56,4 +63,6 @@ export {
   updateCategory,
   addProject,
   deleteProject,
+  getOneProject,
+  updateProject,
 };

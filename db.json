@@ -64,12 +64,19 @@
       "categoryProjectId": 3,
       "image": "https://jthemes.net/themes/html/bolby/demo/images/blog/1.svg",
       "author": "Do Duy Long"
+    },
+    {
+      "id": 4,
+      "name": "Long updat",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
+      "author": "s",
+      "categoryProjectId": 1
     }
   ],
   "categoryProjects": [
     {
       "id": 1,
-      "name": "HTMLL",
+      "name": "HTML",
       "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
     },
     {
