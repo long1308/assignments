@@ -15,10 +15,31 @@ const AboutMe = () => {
                         </div>
                     </div>
                     <div class = "flex-1">
-                            <div class="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500">HTML</div>
-                            <div class="w-full bg-gray-200 rounded-full h-2 mb-4 dark:bg-gray-700">
-                            <div class="bg-yellow-400 h-2  rounded-full" style="width: 80%"></div>
+                            <div class = "flex justify-between">
+                                <div class="mb-1 text-base   font-semibold">HTML</div>
+                                <div class="mb-1 text-base  font-semibold">80%</div>
                             </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 mb-4 dark:bg-gray-700">
+                                <div class="bg-yellow-400 h-2  rounded-full" style="width: 80%"></div>
+                            </div>
+
+                        <div class = "flex justify-between">
+                            <div class="mb-1 text-base   font-semibold">CSS</div>
+                            <div class="mb-1 text-base  font-semibold">75%</div>
+                        </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mb-4 dark:bg-gray-700">
+                            <div class="bg-purple-600 h-2  rounded-full" style="width: 75%"></div>
+                        </div>
+
+                        <div class = "flex justify-between">
+                            <div class="mb-1 text-base   font-semibold">JavaScript</div>
+                            <div class="mb-1 text-base  font-semibold">70%</div>
+                        </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mb-4 dark:bg-gray-700">
+                            <div class="bg-blue-600 h-2  rounded-full" style="width: 70%"></div>
+                        </div>
+
+                        
                     </div>
                 </div>
         </div>
