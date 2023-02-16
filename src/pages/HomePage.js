@@ -1,8 +1,12 @@
 import Header from "@/components/partials/Header";
+import Container from "./Container";
 
 const HomePage = () => {
-  return `
-  ${Header()}
+  return /*html*/ `
+ <div class="">
+    ${Header()}
+    ${Container()}
+ </div>
   `;
 };
 
