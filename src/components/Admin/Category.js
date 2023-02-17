@@ -24,7 +24,7 @@ const Category = () => {
   <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
   <div class=" inline-block min-w-full sm:px-6 relative">
   <div class="overflow-hidden ">
-  <a class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded absolute top-0 left-16 my-3"  href="#/categorys/add">Thêm mới</a>
+  <a class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded absolute top-0 left-16 my-3"  href="/#/categorys/add">Thêm mới</a>
       <table class="min-w-full mt-14">
       <thead class="border-b ">
             <tr>
@@ -61,7 +61,7 @@ const Category = () => {
                   <button  class=" m-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><button id ="delete" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" data-id="${
                     item.id
                   }">Remove</button>
-                  <a class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"href="/admin/categorys/${
+                  <a class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"href="/#/admin/categorys/${
                     item.id
                   }/edit">Sửa</a></td>
               </tr>`

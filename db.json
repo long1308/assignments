@@ -35,7 +35,7 @@
     {
       "id": 2,
       "title": "Quản Lý Danh Mục",
-      "href": "#/categorys"
+      "href": "/#/admin/categorys"
     },
     {
       "id": 3,
@@ -97,6 +97,21 @@
     {
       "id": 5,
       "name": "Tailwind",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+    },
+    {
+      "name": "HTMLLss",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
+      "id": 6
+    },
+    {
+      "name": "HTMLLss",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "Long ư 2",
       "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
     }
   ],

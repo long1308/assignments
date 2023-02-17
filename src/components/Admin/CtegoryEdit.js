@@ -15,7 +15,7 @@ const CategoryEdit = (id) => {
         image: "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
       };
       updateCategory(formCategory).then(() => {
-        router.navigate("/admin#/categorys");
+        router.navigate("/#/admin/categorys");
       });
     });
   });

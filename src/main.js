@@ -24,9 +24,9 @@ import ProjectEditPage from "./pages/Admin/Projects-edit";
 router.on("/admin", () => render(index, app));
 
 // category
-router.on("/categorys", () => render(CategorysPage, app));
+router.on("/admin/categorys", () => render(CategorysPage, app));
 router.on("/categorys/add", () => render(CtegorysAdd, app));
-router.on("/admin/categorys/:id/edit", ({ data }) =>
+router.on("admin/categorys/:id/edit", ({ data }) =>
   render(() => CategoryEditPage(data), app)
 );
 router.on("/admin/categorys/:id", ({ data }) =>
