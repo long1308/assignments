@@ -39,7 +39,7 @@ const Project = () => {
                           (item) => /*html*/ `
                           
                           <div class="flex-wrap mr-7 shadow-boxShadowNew">
-                            <a class="relative block  bg-gray-900 group w-60 p-4" href="##">
+                            <a class="relative block  bg-gray-900 group w-72 rounded-lg p-4" href="##">
                               <img
                                 class="absolute inset-0 object-cover w-full h-full group-hover:opacity-50"
                                 src="${item.image}"
@@ -50,8 +50,8 @@ const Project = () => {
                                     class="transition-all duration-700 transform translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0"
                                   >
                                     <div class="p-2">
-                                      <p class="text-lg text-white">${item.name}</p>
-                                      <button class="px-4 py-2 text-sm text-white bg-green-600">
+                                      <p class="text-xl text-yellow-500 font-bold italic">${item.name}</p>
+                                      <button class=" py-2 text-sm text-white ">author:
                                         ${item.author}
                                       </button>
                                     </div>
