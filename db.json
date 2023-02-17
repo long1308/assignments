@@ -45,31 +45,31 @@
   ],
   "projects": [
     {
-      "name": "dự án 1",
+      "name": "Dự án 1",
       "id": 1,
       "categoryProjectId": 1,
       "image": "https://jthemes.net/themes/html/bolby/demo/images/blog/1.svg",
       "author": "Do Duy Long"
     },
     {
-      "name": "dự án 2",
+      "name": "Dự án 2",
       "id": 2,
       "categoryProjectId": 2,
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/blog/1.svg",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/works/5.svg",
       "author": "Do Duy Long"
     },
     {
-      "name": "dự án 3",
+      "name": "Dự án 3",
       "id": 3,
       "categoryProjectId": 3,
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/blog/1.svg",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/works/4.svg",
       "author": "Do Duy Long"
     },
     {
       "id": 4,
-      "name": "Long updat",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
-      "author": "s",
+      "name": "Dự án 4",
+      "image": "https://jthemes.net/themes/html/bolby/demo/images/works/2.svg",
+      "author": "Do Duy Long",
       "categoryProjectId": 1
     }
   ],
@@ -97,21 +97,6 @@
     {
       "id": 5,
       "name": "Tailwind",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
-    },
-    {
-      "name": "HTMLLss",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
-      "id": 6
-    },
-    {
-      "name": "HTMLLss",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
-      "id": 7
-    },
-    {
-      "id": 8,
-      "name": "Long ư 2",
       "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
     }
   ],

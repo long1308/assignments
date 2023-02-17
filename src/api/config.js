@@ -52,6 +52,7 @@ const getOneProject = (id) => {
 const updateProject = (project) => {
   return instance.put(`/projects/${project.id}`, project);
 };
+
 export {
   getMenu,
   getMenuAdmin,

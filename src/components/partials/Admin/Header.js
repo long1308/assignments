@@ -2,7 +2,7 @@ import Nav from "@/components/Admin/Nav";
 
 const Header = () => {
   return /*html*/ `
-  <header class = "bg-[#353353] fixed left-0 h-screen min-h-screen w-2/12 p-10 items-center z-10 ">
+  <header class = "bg-[#F9F9FF] fixed left-0 h-screen min-h-screen w-2/12 p-10 items-center z-10 ">
         <div class = "w-[108px] h-[108px] rounded-full m-auto">
                 <img src="https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg" alt="">
         </div>

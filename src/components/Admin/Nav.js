@@ -11,7 +11,7 @@ const NavAdmin = () => {
 ${menu
   .map(
     (item, index) =>
-      `<a class = "ml-12 mb-8 text-white" href="${item.href}">${item.title}</a>`
+      `<a class = "ml-12 mb-8 text-black font-medium" href="${item.href}">${item.title}</a>`
   )
   .join(" ")}
 
