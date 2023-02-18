@@ -52,6 +52,10 @@ const getOneProject = (id) => {
 const updateProject = (project) => {
   return instance.put(`/projects/${project.id}`, project);
 };
+// lấy danh sách post
+const getPosts = () => {
+  return instance.get(`/posts`);
+};
 
 export {
   getMenu,
@@ -66,4 +70,5 @@ export {
   deleteProject,
   getOneProject,
   updateProject,
+  getPosts,
 };

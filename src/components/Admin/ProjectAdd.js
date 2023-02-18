@@ -21,7 +21,7 @@ const ProjectAdd = () => {
         categoryProjectId: parseInt(small.value),
       };
       addProject(formProject).then(() => {
-        router.navigate("/admin#/categorys");
+        router.navigate("#/admin/categorys");
       });
       console.log(formProject);
     });

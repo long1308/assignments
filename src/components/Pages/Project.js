@@ -14,6 +14,7 @@ const Project = () => {
     btns.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         const id = btn.dataset.id;
+        console.log(id);
         getCategoriesDeteail(id).then(({ data: { projects } }) =>
           setProject(projects)
         );
