@@ -65,13 +65,14 @@ const Contact = () => {
 
     </div>
     <div class="mb-4 w-full h-full flex justify-center">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387200.11630255785!2d-122.4399385!3d37.773972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f29d8f6d27%3A0x4546de1f9edc227d!2sSan%20Francisco%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2sus!4v1645068532203!5m2!1svi!2sus"
-        width="100%"
-        height="600"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8660159083156!2d105.74466651485452!3d21.038046385993315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2sus!4v1676698042802!5m2!1svi!2sus"
+      width="100%"
+      height="600"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      class = "shadow p-2"
       ></iframe>
     </div>
   </div>
