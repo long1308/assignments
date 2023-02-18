@@ -55,7 +55,7 @@ const Category = () => {
                     item.id
                   }">${item.name}</a></td>
                   <td class=" w-5 h-5 px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><img src="${
-                    item.image
+                    item.image[0]
                   }" alt=""></td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   <button  class=" m-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><button id ="delete" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" data-id="${

@@ -1,5 +1,6 @@
 import { router, useEffect, useState } from "@/utilities";
 import { getOneProject, updateProject, getCategories } from "@/api/config";
+import axios from "axios";
 
 const ProjectEdit = (id) => {
   const [project, setProject] = useState([]);
@@ -14,12 +15,13 @@ const ProjectEdit = (id) => {
     const image = document.querySelector("#image-input");
     const author = document.querySelector("#name-author");
     const small = document.querySelector("#small");
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
+      const listImage = await uploadFilesImage(image.files);
       const formProject = {
         id,
         name: name.value,
-        image: "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
+        image: listImage,
         author: author.value,
         categoryProjectId: parseInt(small.value),
       };
@@ -29,6 +31,29 @@ const ProjectEdit = (id) => {
       console.log(formProject);
     });
   });
+  const uploadFilesImage = async (files) => {
+    if (files) {
+      const CLOUD_NAME = "dpsl2xj1j";
+      const PRESET_NAME = "upload-image";
+      const FOLDER_NAME = "imageProfile";
+      const urls = [];
+      const api = `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`;
+      const formData = new FormData(); // key và value
+      formData.append("upload_preset", PRESET_NAME);
+      formData.append("folder", FOLDER_NAME);
+      for (const file of files) {
+        formData.append("file", file);
+        const response = await axios.post(api, formData, {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        });
+        urls.push(response.data.secure_url);
+        // console.log(urls);
+      }
+      return urls;
+    }
+  };
   return /*html*/ ` <div class="w-8/12 float-right">
  <div class = "m-auto">
  <h1 class="text-center text-5xl my-7">Sửa dự án</h1>
@@ -42,7 +67,7 @@ const ProjectEdit = (id) => {
         </div>
 
         <div class="mb-6 w-10/12">
-            <label for="image-input" class="block mb-2 text-sm font-medium text-gray-900 ">Ảnh</label>
+            <label multiple for="image-input" class="block mb-2 text-sm font-medium text-gray-900 ">Ảnh</label>
             <input value="${
               project.name
             }" required type="file" id="image-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500">

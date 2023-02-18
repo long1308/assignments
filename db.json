@@ -100,27 +100,37 @@
     {
       "id": 1,
       "name": "HTML",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676735661/imageProfile/mjwqamyrdqspums6kiq6.png"
+      ]
     },
     {
       "id": 2,
       "name": "CSS",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676735688/imageProfile/fxmaktzalpfgwlntahwf.png"
+      ]
     },
     {
       "id": 3,
       "name": "Javascript",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676735848/imageProfile/zo85oppctm6e5g1dirtw.png"
+      ]
     },
     {
       "id": 4,
       "name": "ReactJs",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676735860/imageProfile/rj4dlxjdly8s5c3poffk.png"
+      ]
     },
     {
       "id": 5,
       "name": "Tailwind",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676735872/imageProfile/m8vwoadcjnauq2k1yd11.png"
+      ]
     },
     {
       "name": "Long",
