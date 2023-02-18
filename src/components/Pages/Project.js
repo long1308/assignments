@@ -33,7 +33,7 @@ const Project = () => {
                           .join(" ")}
                     </div>
                     
-                    <div class ="flex flex-wrap mt-6 transition">
+                    <div class ="flex flex-wrap mt-6 transition delay-700	duration-500		">
                       ${project
                         .map(
                           (item) => /*html*/ `

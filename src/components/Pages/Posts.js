@@ -2,7 +2,8 @@ const Posts = () => {
   return /*html*/ `
   <div class ="container">
         <div class ="px-16 mb-14">
-        <h1 class ="text-3xl my-3 font-semibold ">About Me</h1>
+        <h1 class ="text-3xl my-3 font-semibold ">Latest Posts
+        </h1>
         <div class="flex flex-wrap -mx-4">
        <a href="">
        <div class="w-full md:w-1/2 lg:w-1/3 p-4">
@@ -19,7 +20,7 @@ const Posts = () => {
      </div>
        </a>
         <a href="">
-        <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="w-full md:w-1/2 lg:w-1/3 p-4 hover">
           <div class="bg-white rounded-lg shadow">
             <div class="relative overflow-hidden">
               <img class="w-full h-48 object-cover rounded-t-lg hover:scale-110 delay-300 duration-300 transition-all" src="https://jthemes.net/themes/html/bolby/demo/images/blog/2.svg" alt="Article Image">

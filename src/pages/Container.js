@@ -5,7 +5,7 @@ import Contact from "@/components/Pages/Contact";
 import Posts from "@/components/Pages/Posts";
 const Container = () => {
   return /*html*/ `
-  <div class ='float-right w-10/12'>
+  <div class ='float-right w-10/12 pb-16'>
   ${Home()}
   ${AboutMe()}
   ${Project()}
