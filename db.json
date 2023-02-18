@@ -73,11 +73,11 @@
       "categoryProjectId": 1
     },
     {
+      "id": 5,
       "name": "Dự án mẫu",
       "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
       "author": "Nguyen Anh Tu",
-      "categoryProjectId": 1,
-      "id": 5
+      "categoryProjectId": 2
     },
     {
       "name": "Du an tot nghiep",
@@ -85,6 +85,15 @@
       "author": "Dao Van Loi",
       "categoryProjectId": 2,
       "id": 6
+    },
+    {
+      "name": "Du an cong khai",
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676734945/imageProfile/u8orbi6r8ugkuhscw4je.png"
+      ],
+      "author": "Nguyen Xuan Hoang",
+      "categoryProjectId": 2,
+      "id": 7
     }
   ],
   "categoryProjects": [
@@ -112,6 +121,13 @@
       "id": 5,
       "name": "Tailwind",
       "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+    },
+    {
+      "name": "Long",
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676734690/imageProfile/zyehsyzgcmveekkgg2xp.png"
+      ],
+      "id": 6
     }
   ],
   "posts": [

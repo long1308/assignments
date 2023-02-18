@@ -24,7 +24,7 @@ const ProjectEdit = (id) => {
         categoryProjectId: parseInt(small.value),
       };
       updateProject(formProject).then(() => {
-        router.navigate("/admin#/categorys");
+        router.navigate("#/admin/categorys");
       });
       console.log(formProject);
     });
