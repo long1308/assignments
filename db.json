@@ -3,27 +3,32 @@
     {
       "id": 1,
       "title": "Home",
-      "href": "#/home"
+      "href": "#home",
+      "icon": "icon-home"
     },
     {
       "id": 2,
       "title": "About Me",
-      "href": "#/about"
+      "href": "#about",
+      "icon": "icon-user-following"
     },
     {
       "id": 3,
       "title": "Works",
-      "href": "#/works"
+      "href": "#works",
+      "icon": "icon-layers"
     },
     {
       "id": 4,
       "title": "Blog",
-      "href": "#/blog"
+      "href": "#blog",
+      "icon": "icon-note"
     },
     {
       "id": 5,
       "title": "Contact",
-      "href": "#/Contact"
+      "href": "#/Contact",
+      "icon": "icon-bubbles"
     }
   ],
   "menuAdmin": [
@@ -45,46 +50,58 @@
   ],
   "projects": [
     {
-      "name": "Dự án 1",
       "id": 1,
-      "categoryProjectId": 1,
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/blog/1.svg",
-      "author": "Do Duy Long"
+      "name": "Dự án 1",
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676736260/imageProfile/qycca86zjhu0vduv93cq.png"
+      ],
+      "author": "Do Duy Long",
+      "categoryProjectId": 1
     },
     {
-      "name": "Dự án 2",
       "id": 2,
-      "categoryProjectId": 2,
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/works/5.svg",
-      "author": "Do Duy Long"
+      "name": "Dự án 2",
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676736362/imageProfile/njuckqa5ns2jtlold9mp.png"
+      ],
+      "author": "Do Duy Long",
+      "categoryProjectId": 2
     },
     {
-      "name": "Dự án 3",
       "id": 3,
-      "categoryProjectId": 3,
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/works/4.svg",
-      "author": "Do Duy Long"
+      "name": "Dự án 3",
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676736407/imageProfile/aroxuloi14meww0dsjni.png"
+      ],
+      "author": "Do Duy Long",
+      "categoryProjectId": 3
     },
     {
       "id": 4,
       "name": "Dự án 4",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/works/2.svg",
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676736277/imageProfile/mkpiv0xdessjbyot5eus.png"
+      ],
       "author": "Do Duy Long",
       "categoryProjectId": 1
     },
     {
       "id": 5,
       "name": "Dự án mẫu",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676736309/imageProfile/uvwhlxtudkmgsf0pqdqc.png"
+      ],
       "author": "Nguyen Anh Tu",
       "categoryProjectId": 2
     },
     {
+      "id": 6,
       "name": "Du an tot nghiep",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg",
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676736294/imageProfile/brl3kqleht0w0y1ls2w6.png"
+      ],
       "author": "Dao Van Loi",
-      "categoryProjectId": 2,
-      "id": 6
+      "categoryProjectId": 2
     },
     {
       "name": "Du an cong khai",

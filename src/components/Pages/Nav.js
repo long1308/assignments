@@ -5,13 +5,26 @@ const Nav = () => {
   useEffect(() => {
     getMenu().then(({ data }) => setMenu(data));
   }, []);
-
+  useEffect(() => {
+    const listItem = document.querySelectorAll(".active");
+    if (listItem[0]) {
+      listItem[0].classList.add("text-red-600");
+    }
+    listItem.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        document
+          .querySelector(".active.text-red-600")
+          .classList.remove("text-red-600");
+        item.classList.add("text-red-600");
+      });
+    });
+  });
   return /*html */ `
 
 ${menu
   .map(
     (item, index) =>
-      `<a class = "ml-16 mb-8 text-black font-medium" href="${item.href}">${item.title}</a>`
+      `<a class = "ml-16 mb-8  font-medium transition-all delay-200	 active" href="${item.href}">  <i class="${item.icon} pr-2 text-red-500"></i> ${item.title}</a>`
   )
   .join(" ")}
 

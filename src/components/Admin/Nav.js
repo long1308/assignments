@@ -14,7 +14,7 @@ ${menu
       `<a class = "ml-12 mb-8 text-black font-medium" href="${item.href}">${item.title}</a>`
   )
   .join(" ")}
-
+    
   `;
 };
 

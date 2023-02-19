@@ -74,7 +74,7 @@ const CategoryDetail = (id) => {
                     item.name
                   }</a></td>
                   <td class=" w-10 h-10 px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><img src="${
-                    item.image
+                    item.image[0]
                   }" alt=""></td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${
                     item.author

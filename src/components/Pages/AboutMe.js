@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return /*html*/ `
-  <div class ="container">
+  <div class ="container " id="about">
         <div class ="px-16 mb-14">
         <h1 class ="text-3xl my-3 font-semibold ">About Me</h1>
         <div class ="flex justify-center items-center mb-32">
