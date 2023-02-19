@@ -40,4 +40,8 @@ router.on("/list-projects", () => render(ListProjectsPage, app));
 router.on("/admin/projects/:id/edit", ({ data }) =>
   render(() => ProjectEditPage(data), app)
 );
+
+//profile
+import Posts from "./pages/Admin/Posts";
+router.on("/admin/posts", () => render(Posts, app));
 router.resolve();

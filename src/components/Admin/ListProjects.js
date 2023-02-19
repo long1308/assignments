@@ -1,7 +1,4 @@
-import {
-  getProject,
-  getCategories,
-} from "@/api/config";
+import { getProject, getCategories } from "@/api/config";
 import { useState, useEffect } from "@/utilities";
 
 const ListProjects = () => {
@@ -13,7 +10,20 @@ const ListProjects = () => {
   useEffect(() => {
     getProject().then(({ data }) => setData(data));
   }, []);
-
+  useEffect(() => {
+    const btns = document.querySelectorAll("#delete");
+    btns.forEach((btn) => {
+      // console.log(confirm('Xác nhận xóa !!'))
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.id;
+        console.log(id);
+        deleteProject(id).then(() => {
+          const newProject = data.filter((c) => c.id != id);
+          setData(newProject);
+        });
+      });
+    });
+  });
   return /*html*/ `
     <div class="flex flex-col text-center w-10/12 float-right">
     <h1 class="text-center text-5xl my-7">Danh Sách Dự Án</h1>

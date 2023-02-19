@@ -60,6 +60,7 @@ const updateProject = (project) => {
 const getPosts = () => {
   return instance.get(`/posts`);
 };
+// lấy danh sách bài viết
 
 export {
   getMenu,
