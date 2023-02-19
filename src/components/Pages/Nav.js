@@ -24,7 +24,7 @@ const Nav = () => {
 ${menu
   .map(
     (item, index) =>
-      `<a class = "ml-16 mb-8  font-medium transition-all delay-200	 active" href="${item.href}">  <i class="${item.icon} pr-2 text-red-500"></i> ${item.title}</a>`
+      `<a class = "mb-8  font-medium transition-all delay-200	 active" href="${item.href}">  <i class="${item.icon} pr-2 text-red-500"></i> ${item.title}</a>`
   )
   .join(" ")}
 

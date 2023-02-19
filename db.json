@@ -45,7 +45,7 @@
     {
       "id": 3,
       "title": "Quản Lý Dự án",
-      "href": "#/projects"
+      "href": "#/list-projects"
     }
   ],
   "projects": [

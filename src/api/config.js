@@ -36,6 +36,10 @@ const updateCategory = (category) => {
 const deleteCategory = (id) => {
   return instance.delete(`/categoryProjects/${id}`);
 };
+// lấy all projects
+const getProject = () => {
+  return instance.get(`/projects`);
+};
 // thêm mới projects
 const addProject = (project) => {
   return instance.post(`/projects`, project);
@@ -71,4 +75,5 @@ export {
   getOneProject,
   updateProject,
   getPosts,
+  getProject,
 };

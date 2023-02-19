@@ -21,6 +21,7 @@ import CtegorysAdd from "./pages/Admin/Ctegorys-add";
 import CategoryEditPage from "./pages/Admin/Category-edit";
 import ProjectsAdd from "./pages/Admin/Project-add";
 import ProjectEditPage from "./pages/Admin/Projects-edit";
+import ListProjectsPage from "./pages/Admin/ListProjectsPage"
 router.on("/admin", () => render(index, app));
 
 // category
@@ -35,6 +36,7 @@ router.on("/admin/categorys/:id", ({ data }) =>
 
 //project
 router.on("/projects/add", () => render(ProjectsAdd, app));
+router.on("/list-projects", () => render(ListProjectsPage, app));
 router.on("/admin/projects/:id/edit", ({ data }) =>
   render(() => ProjectEditPage(data), app)
 );
