@@ -1,10 +1,23 @@
-import { getPosts } from "@/api/config";
+import { getPosts, deletePost } from "@/api/config";
 import { useEffect, useState } from "@/utilities";
 const ListPosts = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     getPosts().then(({ data }) => setPosts(data));
   }, []);
+
+  useEffect(() => {
+    const btns = document.querySelectorAll("#delete");
+    btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.id;
+        deletePost(id).then(() => {
+          const newPosts = posts.filter((c) => c.id != id);
+          setPosts(newPosts);
+        });
+      });
+    });
+  });
   return /*html*/ `
   <div class="flex flex-col text-center w-10/12 float-right">
   <h1 class="text-center text-5xl my-7">Danh Sách Bài viết</h1>
@@ -12,7 +25,7 @@ const ListPosts = () => {
   <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
   <div class=" inline-block min-w-full sm:px-6 relative">
   <div class="overflow-hidden ">
-  <a class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded absolute top-0 left-16 my-3"  href="#/posts/add">Thêm mới</a>
+  <a class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded absolute top-0 left-16 my-3"  href="/#/posts/add">Thêm mới</a>
       <table class="min-w-full mt-14">
         <table class="min-w-full">
           <thead class="border-b ">

@@ -60,8 +60,14 @@ const updateProject = (project) => {
 const getPosts = () => {
   return instance.get(`/posts`);
 };
-// lấy danh sách bài viết
-
+// xóa post
+const deletePost = (id) => {
+  return instance.delete(`/posts/${id}`);
+};
+// thêm post
+const addPost = (post) => {
+  return instance.post(`/posts/`, post);
+};
 export {
   getMenu,
   getMenuAdmin,
@@ -77,4 +83,6 @@ export {
   updateProject,
   getPosts,
   getProject,
+  deletePost,
+  addPost,
 };
