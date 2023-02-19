@@ -14,8 +14,8 @@
     },
     {
       "id": 3,
-      "title": "Works",
-      "href": "#works",
+      "title": "Projects",
+      "href": "#projects",
       "icon": "icon-layers"
     },
     {
@@ -27,7 +27,7 @@
     {
       "id": 5,
       "title": "Contact",
-      "href": "#/Contact",
+      "href": "#contact",
       "icon": "icon-bubbles"
     }
   ],
