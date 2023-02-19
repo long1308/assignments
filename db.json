@@ -170,55 +170,33 @@
   "posts": [
     {
       "id": 1,
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676789196/imageProfile/y2w05fz0ayrbwnhdxdqs.png"
+      ],
       "title": "5 công cụ phát triển ứng dụng tốt nhất cho dự án của bạn",
-      "date": "09 Tháng hai, 2020",
       "link": "#",
       "author": "Do Duy Long",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+      "date": "2023-02-16"
     },
     {
       "id": 2,
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676789182/imageProfile/t3xikkpzbodme6ryyy8o.png"
+      ],
       "title": "Những quan niệm sai lầm phổ biến về thanh toán",
-      "date": "07 Tháng hai, 2020",
       "link": "#",
       "author": "Do Duy Long",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
+      "date": "2023-02-15"
     },
     {
       "id": 3,
+      "image": [
+        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676789171/imageProfile/buoj7qvc1txdwfts604i.png"
+      ],
       "title": "3 Điều Cần Biết Về Khởi Nghiệp",
-      "date": "06 Tháng hai, 2020",
       "link": "#",
       "author": "Do Duy Long",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
-    },
-    {
-      "id": 4,
-      "title": "3 Điều Cần Biết Về Khởi Nghiệp",
-      "date": "06 Tháng hai, 2020",
-      "link": "#",
-      "author": "Do Duy Long",
-      "image": "https://jthemes.net/themes/html/bolby/demo/images/avatar-2.svg"
-    },
-    {
-      "image": [
-        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676788004/imageProfile/o1vkjhsgxfx5yu5sznz9.png"
-      ],
-      "name": "12",
-      "link": "1212",
-      "author": "1212",
-      "date": "2023-02-14",
-      "id": 5
-    },
-    {
-      "image": [
-        "https://res.cloudinary.com/dpsl2xj1j/image/upload/v1676788058/imageProfile/y0ftcaljoh6ozgqvc49l.png"
-      ],
-      "title": "12",
-      "link": "1212",
-      "author": "s",
-      "date": "2023-02-09",
-      "id": 6
+      "date": "2023-02-08"
     }
   ],
   "profile": {

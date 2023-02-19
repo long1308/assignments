@@ -44,6 +44,10 @@ router.on("/admin/projects/:id/edit", ({ data }) =>
 //profile
 import Posts from "./pages/Admin/Posts";
 import PostsAddPage from "./pages/Admin/PostsAddPage";
+import PostsEditPage from "./pages/Admin/Posts-edit";
 router.on("/admin/posts", () => render(Posts, app));
 router.on("/posts/add", () => render(PostsAddPage, app));
+router.on("/admin/posts/:id/edit", ({ data }) =>
+  render(() => PostsEditPage(data), app)
+);
 router.resolve();

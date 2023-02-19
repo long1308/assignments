@@ -68,6 +68,14 @@ const deletePost = (id) => {
 const addPost = (post) => {
   return instance.post(`/posts/`, post);
 };
+// update post
+const updatePost = (post) => {
+  return instance.put(`/posts/${post.id}`, post);
+};
+// lấy 1 post
+const getOnePost = (id) => {
+  return instance.get(`/posts/${id}`);
+};
 export {
   getMenu,
   getMenuAdmin,
@@ -85,4 +93,6 @@ export {
   getProject,
   deletePost,
   addPost,
+  updatePost,
+  getOnePost
 };

@@ -63,7 +63,7 @@ const ListPosts = () => {
                     index + 1
                   }</a></td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><img class = "w-7 h-7" src="${
-                    item.image
+                    item.image[0]
                   }" alt="">
                   </td>
                   <td class=" w-10 h-10 px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${
@@ -81,7 +81,7 @@ const ListPosts = () => {
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"><button  id = "delete"class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" data-id="${
                     item.id
                   }">Remove</button>
-                  <a  class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"href="/admin/projects/${
+                  <a  class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"href="/admin/posts/${
                     item.id
                   }/edit">Sửa</a></td>
               </tr>`
